@@ -1,0 +1,13 @@
+*~
+*.swn
+*.swm
+*.swo
+*.swp
+*.log
+*.log.*
+TEST*
+gen/
+bin/
+local.properties
+ant.properties
+project.properties
