@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MyScorecardsActivity</string>
+    <!-- My Scorecards  -->
+    <string name="action_new">New</string>
+    <string name="action_remove">Delete</string>
+    <string name="action_settings">Settings</string>
 </resources>
