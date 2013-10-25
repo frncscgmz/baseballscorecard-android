@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewScorecardActivity">
+
+    <!--<EditView
+        android:id="@+id/edt_nombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/team1_hint" />
+    
+    <EditView
+        android:id="@+id/edt_paterno"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/team2_hint" />-->
+</LinearLayout>

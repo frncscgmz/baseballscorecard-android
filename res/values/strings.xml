@@ -2,7 +2,13 @@
 <resources>
     <string name="app_name">MyScorecardsActivity</string>
     <!-- My Scorecards  -->
+    <string name="mysc_name">My Scorecards</string>
     <string name="action_new">New</string>
     <string name="action_remove">Delete</string>
     <string name="action_settings">Settings</string>
+
+    <!-- New scorecard -->
+    <string name="newsc_name">New Scorecard</string>
+    <string name="team1_hint">Team 1</string>
+    <string name="team2_hint">Team 2</string>
 </resources>

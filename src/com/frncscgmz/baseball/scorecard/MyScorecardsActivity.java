@@ -4,9 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
 
-public class MyScorecardsActivity extends Activity
-{
+public class MyScorecardsActivity extends Activity {
    /** Called when the activity is first created. */
    @Override
    public void onCreate(Bundle savedInstanceState) {
@@ -18,5 +18,18 @@ public class MyScorecardsActivity extends Activity
    public boolean onCreateOptionsMenu(Menu menu) {
       getMenuInflater().inflate(R.menu.myscorecards, menu);
       return super.onCreateOptionsMenu(menu);
+   }
+
+   @Override
+   public boolean onOptionsItemSelected(MenuItem item) {
+      switch (item.getItemId()) {
+         case R.id.action_new:{
+            Intent intent = new Intent(this,NewScorecardActivity.class);
+               startActivity(intent);
+            return true;
+         }
+
+      }
+      return super.onOptionsItemSelected(item);
    }
 }
