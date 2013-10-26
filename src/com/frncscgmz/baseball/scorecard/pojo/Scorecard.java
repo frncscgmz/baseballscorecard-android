@@ -1,11 +1,12 @@
 package com.frncscgmz.baseball.scorecard.pojo;
 
+import java.util.Date;
+
 public class Scorecard {
    private int idScorecard;
    private String teamVisitor;
    private String teamHome;
    private String ballpark;
-   private String weather;
    private Date gameDate;
 
    /**
@@ -78,24 +79,6 @@ public class Scorecard {
     */
    public void setBallpark(String ballpark) {
       this.ballpark = ballpark;
-   }
-
-   /**
-    * Get weather.
-    *
-    * @return weather as String.
-    */
-   public String getWeather() {
-      return weather;
-   }
-
-   /**
-    * Set weather.
-    *
-    * @param weather the value to set.
-    */
-   public void setWeather(String weather) {
-      this.weather = weather;
    }
 
    /**

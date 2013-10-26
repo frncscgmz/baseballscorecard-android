@@ -1,19 +1,53 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".NewScorecardActivity">
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:layout_marginTop="15dip"
+   android:layout_marginLeft="15dip"
+   android:layout_marginRight="15dip"
+   android:padding="10dip"
+   android:fillViewport="true">
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      tools:context=".NewScorecardActivity">
 
-    <!--<EditView
-        android:id="@+id/edt_nombre"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/team1_hint" />
-    
-    <EditView
-        android:id="@+id/edt_paterno"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/team2_hint" />-->
-</LinearLayout>
+      <EditText
+         android:id="@+id/nsc_edt_team1"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:hint="@string/team1_hint" />
+
+      <EditText
+         android:id="@+id/nsc_edt_team2"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:hint="@string/team2_hint" />
+
+      <EditText
+         android:id="@+id/nsc_edt_ballpark"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:hint="@string/ballpark_hint" />
+
+      <DatePicker
+         android:id="@+id/nsc_gamedate"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:calendarViewShown="false"/>
+
+      <TimePicker
+         android:id="@+id/nsc_gametime"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content" />
+
+      <Button
+         android:id="@+id/nsc_btn_new"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content" 
+         android:text="@string/btn_new_sc"/>
+   </LinearLayout>
+</ScrollView>

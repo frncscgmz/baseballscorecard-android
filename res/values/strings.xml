@@ -9,6 +9,8 @@
 
     <!-- New scorecard -->
     <string name="newsc_name">New Scorecard</string>
-    <string name="team1_hint">Team 1</string>
-    <string name="team2_hint">Team 2</string>
+    <string name="team1_hint">Visiting Team</string>
+    <string name="team2_hint">Home Team</string>
+    <string name="ballpark_hint">Ball Park</string>
+    <string name="btn_new_sc">Create</string>
 </resources>
