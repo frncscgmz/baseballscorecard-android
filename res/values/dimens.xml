@@ -1,0 +1,4 @@
+<resources>
+   <dimen name="t_prim_size">14sp</dimen>
+   <dimen name="t_sec_size">10sp</dimen>
+</resources>

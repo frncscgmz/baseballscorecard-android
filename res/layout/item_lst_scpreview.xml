@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent" 
+   android:layout_height="?android:attr/listPreferredItemHeight"
+   android:padding="6dip">
+
+   <LinearLayout 
+      android:id="@+id/sc_linear_data"
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content">
+      <!-- Visitor Team -->
+      <TextView
+         android:id="@+id/d_scp_visitor_team"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:textSize="@dimen/t_prim_size"
+         android:layout_weight="2"
+         android:gravity="center"
+         android:textColor="?android:attr/textColorPrimary"/>
+
+      <!-- Home Team -->
+      <TextView
+         android:id="@+id/d_scp_home_team"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="2"
+         android:textSize="@dimen/t_prim_size"
+         android:gravity="center"
+         android:textColor="?android:attr/textColorPrimary"/>
+
+      <!-- Ballpark -->
+      <TextView
+         android:id="@+id/d_scp_ballpark"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:textSize="@dimen/t_prim_size"
+         android:gravity="center"
+         android:textColor="?android:attr/textColorPrimary"/>
+
+      <!-- Game Date -->
+      <TextView
+         android:id="@+id/d_scp_date"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="2"
+         android:textSize="@dimen/t_prim_size"
+         android:gravity="center"
+         android:textColor="?android:attr/textColorPrimary"/>
+
+   </LinearLayout>
+   <LinearLayout 
+      android:id="@+id/sc_linear_title"
+      android:layout_below="@id/sc_linear_data"
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content">
+      <TextView
+         android:id="@+id/t_scp_visitor_team"
+         android:text="@string/team1_hint"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="2"
+         android:textSize="@dimen/t_sec_size"
+         android:gravity="center"
+         android:textColor="?android:attr/textColorSecondary"/>
+
+      <TextView
+         android:id="@+id/t_scp_home_team"
+         android:text="@string/team2_hint"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="2"
+         android:textSize="@dimen/t_sec_size"
+         android:gravity="center"
+         android:textColor="?android:attr/textColorSecondary"/>
+
+      <TextView
+         android:id="@+id/t_scp_ballpark"
+         android:text="@string/ballpark_hint"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:textSize="@dimen/t_sec_size"
+         android:gravity="center"
+         android:textColor="?android:attr/textColorSecondary"/>
+
+      <TextView
+         android:id="@+id/t_scp_date"
+         android:text="@string/date_hint"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="2"
+         android:textSize="@dimen/t_sec_size"
+         android:gravity="center"
+         android:textColor="?android:attr/textColorSecondary"/>
+   </LinearLayout>
+</RelativeLayout>

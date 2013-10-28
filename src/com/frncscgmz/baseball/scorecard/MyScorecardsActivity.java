@@ -5,13 +5,18 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
+import android.widget.ListView;
 
 public class MyScorecardsActivity extends Activity {
+   private ListView lstvwScorecards;
+
    /** Called when the activity is first created. */
    @Override
    public void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.main);
+
+      lstvwScorecards = (ListView)findViewById(R.id.lv_scorecards);
    }
 
    @Override

@@ -12,5 +12,6 @@
     <string name="team1_hint">Visiting Team</string>
     <string name="team2_hint">Home Team</string>
     <string name="ballpark_hint">Ball Park</string>
+    <string name="date_hint">Game Date</string>
     <string name="btn_new_sc">Create</string>
 </resources>
