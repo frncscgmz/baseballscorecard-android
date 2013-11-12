@@ -7,6 +7,12 @@ import android.view.MenuItem;
 import android.content.Intent;
 import android.widget.ListView;
 
+import java.util.List;
+import java.util.ArrayList;
+
+import com.frncscgmz.baseball.scorecard.pojo.Scorecard;
+import com.frncscgmz.baseball.scorecard.adapters.ScorecardsAdapter;
+
 public class MyScorecardsActivity extends Activity {
    private ListView lstvwScorecards;
 
@@ -17,6 +23,16 @@ public class MyScorecardsActivity extends Activity {
       setContentView(R.layout.main);
 
       lstvwScorecards = (ListView)findViewById(R.id.lv_scorecards);
+
+      /* Test */
+      List<Scorecard> lstScs = new ArrayList<Scorecard>();
+      lstScs.add(new Scorecard(1,"Orioles","Dodgers"));
+      Scorecard[] arrSC = lstScs
+         .toArray(new Scorecard[lstScs.size()]);
+
+      ScorecardsAdapter scAdapter = 
+         new ScorecardsAdapter(this,R.layout.item_lst_scpreview,arrSC);
+      lstvwScorecards.setAdapter(scAdapter);
    }
 
    @Override

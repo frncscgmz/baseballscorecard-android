@@ -9,6 +9,13 @@ public class Scorecard {
    private String ballpark;
    private Date gameDate;
 
+   public Scorecard(int idScorecard, String teamVisitor,
+         String teamHome) {
+      this.idScorecard = idScorecard;
+      this.teamVisitor = teamVisitor;
+      this.teamHome    = teamHome;
+   }
+
    /**
     * Get idScorecard.
     *

@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.TextView;
 
 import com.frncscgmz.baseball.scorecard.pojo.Scorecard;
 import com.frncscgmz.baseball.scorecard.R;
@@ -30,7 +31,14 @@ public class ScorecardsAdapter extends ArrayAdapter<Scorecard> {
 
       View rowView = inflater.inflate(lstItemId, parent, false);
 
+      TextView txtVisitor  = (TextView) rowView
+         .findViewById(R.id.d_scp_visitor_team);
+      TextView txtHome     = (TextView) rowView
+         .findViewById(R.id.d_scp_home_team);
+
       Scorecard sc = getItem(position);
+      txtVisitor.setText(sc.getTeamVisitor());
+      txtHome.setText(sc.getTeamHome());
 
       return rowView;
    }
