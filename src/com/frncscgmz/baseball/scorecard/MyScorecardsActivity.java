@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Date;
 
 import com.frncscgmz.baseball.scorecard.pojo.Scorecard;
 import com.frncscgmz.baseball.scorecard.adapters.ScorecardsAdapter;
@@ -26,7 +27,10 @@ public class MyScorecardsActivity extends Activity {
 
       /* Test */
       List<Scorecard> lstScs = new ArrayList<Scorecard>();
-      lstScs.add(new Scorecard(1,"Orioles","Dodgers"));
+      lstScs.add(new Scorecard(1,"Orioles","Dodgers",
+               "Chavez Ravine",new Date()));
+      lstScs.add(new Scorecard(2,"Pirates","A's",
+               "Olympic Colisseum",new Date()));
       Scorecard[] arrSC = lstScs
          .toArray(new Scorecard[lstScs.size()]);
 

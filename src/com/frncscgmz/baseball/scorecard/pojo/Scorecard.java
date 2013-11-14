@@ -10,10 +10,12 @@ public class Scorecard {
    private Date gameDate;
 
    public Scorecard(int idScorecard, String teamVisitor,
-         String teamHome) {
+         String teamHome, String ballpark, Date gameDate) {
       this.idScorecard = idScorecard;
       this.teamVisitor = teamVisitor;
       this.teamHome    = teamHome;
+      this.ballpark    = ballpark;
+      this.gameDate    = gameDate;
    }
 
    /**
